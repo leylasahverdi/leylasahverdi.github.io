@@ -1,0 +1,101 @@
+{
+  "category": "frida",
+  "title": "Frida'nın Günlüğü",
+  "subtitle": "Renk, tutku ve başkaldırının sanatçısı... Frida Kahlo'yu ne kadar tanıyorsun?",
+  "emoji": "🌺",
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2d0a00 0%, #4a1200 50%, #6b2000 100%)",
+    "surface": "rgba(255, 255, 255, 0.07)",
+    "surfaceHover": "rgba(255, 255, 255, 0.13)",
+    "accent": "#ff7043",
+    "accentDark": "#e64a19",
+    "text": "#fff3e0",
+    "textMuted": "rgba(255, 243, 224, 0.65)",
+    "optionHover": "rgba(255, 112, 67, 0.12)",
+    "optionCorrect": "rgba(76, 175, 80, 0.35)",
+    "optionWrong": "rgba(244, 67, 54, 0.35)"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Frida Kahlo hangi ülkenin sanatçısıdır?",
+      "options": {
+        "a": "İspanya",
+        "b": "Brezilya",
+        "c": "Arjantin",
+        "d": "Meksika"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 2,
+      "question": "Frida en çok hangi tür tablo yapmıştır?",
+      "options": {
+        "a": "Doğa manzaraları",
+        "b": "Otoportreler (kendi portreleri)",
+        "c": "Hayvan resimleri",
+        "d": "Soyut tablolar"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 3,
+      "question": "Frida Kahlo hangi ünlü sanatçıyla evliydi?",
+      "options": {
+        "a": "Pablo Picasso",
+        "b": "Salvador Dalí",
+        "c": "Diego Rivera",
+        "d": "Henri Matisse"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 4,
+      "question": "Frida'nın tablolarında sıkça görülen ikonik fiziksel özelliği nedir?",
+      "options": {
+        "a": "Kızıl saçlar",
+        "b": "Tek kaş (monobrüv)",
+        "c": "Mavi gözler",
+        "d": "Çok uzun boylu olması"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 5,
+      "question": "Frida, sanatla ciddi şekilde ilgilenmeye hangi olaydan sonra başladı?",
+      "options": {
+        "a": "Annesini kaybettikten sonra",
+        "b": "Evlendikten sonra",
+        "c": "Ağır bir otobüs kazası geçirdikten sonra",
+        "d": "Meksika'dan ayrıldıktan sonra"
+      },
+      "correct": "c"
+    }
+  ],
+  "results": {
+    "perfect": {
+      "min": 5,
+      "emoji": "🌸🎨",
+      "title": "Frida'nın Ruhu Sende!",
+      "message": "Renkler ve duygular senin içinde yaşıyor. Frida seninle aynı tuvali paylaşmaktan büyük mutluluk duyardı. Olağanüstü!"
+    },
+    "great": {
+      "min": 3,
+      "emoji": "🌺✨",
+      "title": "Sanatsal Ruh!",
+      "message": "Frida'nın fırçasından ilham almışsın. Birkaç detay seni geçmiş olsa da içindeki sanatçı güçlü biçimde parlıyor!"
+    },
+    "ok": {
+      "min": 1,
+      "emoji": "🪷💫",
+      "title": "Çiçek Açıyor!",
+      "message": "Henüz tam açılmamış ama içinde güzel renkler var. Frida'nın hayatını daha çok keşfedersen bir dahaki sefere çok daha iyi olursun!"
+    },
+    "zero": {
+      "min": 0,
+      "emoji": "🎭😊",
+      "title": "Boş Tuval!",
+      "message": "Hiç boya yok ama üzülme — Frida da her şeyi bilerek başlamadı, sadece hissetti. Sen de hisset ve tekrar dene!"
+    }
+  }
+}

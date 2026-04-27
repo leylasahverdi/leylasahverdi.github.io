@@ -1,0 +1,101 @@
+{
+  "category": "tesla",
+  "title": "Tesla'nın Evreni",
+  "subtitle": "Alternatif akımdan kablosuz enerjiye... Elektriğin büyülü dünyasına hoş geldin!",
+  "emoji": "⚡",
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #0d0020 0%, #1a0040 50%, #2a0060 100%)",
+    "surface": "rgba(255, 255, 255, 0.07)",
+    "surfaceHover": "rgba(255, 255, 255, 0.13)",
+    "accent": "#00e5ff",
+    "accentDark": "#00b8d4",
+    "text": "#f0e8ff",
+    "textMuted": "rgba(240, 232, 255, 0.65)",
+    "optionHover": "rgba(0, 229, 255, 0.10)",
+    "optionCorrect": "rgba(76, 175, 80, 0.35)",
+    "optionWrong": "rgba(244, 67, 54, 0.35)"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Tesla, hangi ünlü rakibiyle yaşanan 'Akım Savaşları'nda karşı karşıya geldi?",
+      "options": {
+        "a": "Alexander Graham Bell",
+        "b": "Thomas Edison",
+        "c": "Guglielmo Marconi",
+        "d": "Albert Einstein"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 2,
+      "question": "Tesla'nın geliştirdiği elektrik sistemi hangisidir?",
+      "options": {
+        "a": "Doğru Akım (DC)",
+        "b": "Nötr Akım (NC)",
+        "c": "Alternatif Akım (AC)",
+        "d": "Karma Akım (MC)"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 3,
+      "question": "Tesla'nın en büyük hayali neydi?",
+      "options": {
+        "a": "Dünyanın en zengin insanı olmak",
+        "b": "Aya gitmek",
+        "c": "Uçan araba icat etmek",
+        "d": "Tüm dünyaya ücretsiz kablosuz elektrik sağlamak"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 4,
+      "question": "Tesla kaç yaşında Amerika'ya göç etti?",
+      "options": {
+        "a": "18",
+        "b": "23",
+        "c": "28",
+        "d": "35"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 5,
+      "question": "Tesla hangi yılda hayatını kaybetti?",
+      "options": {
+        "a": "1915",
+        "b": "1929",
+        "c": "1943",
+        "d": "1955"
+      },
+      "correct": "c"
+    }
+  ],
+  "results": {
+    "perfect": {
+      "min": 5,
+      "emoji": "⚡🏆",
+      "title": "Elektrik Gibi Çarptı!",
+      "message": "Tesla seninle gurur duyuyor olurdu! Alternatif akım kadar parlak, Tesla bobini kadar güçlüsün. Muhteşem!"
+    },
+    "great": {
+      "min": 3,
+      "emoji": "🔌⭐",
+      "title": "Güçlü Akım!",
+      "message": "Enerjin yüksek, birkaç devre eksik ama genel tabloya baktığında harika bir performans sergilemişsin!"
+    },
+    "ok": {
+      "min": 1,
+      "emoji": "💡🌱",
+      "title": "Küçük Kıvılcım!",
+      "message": "Bir kıvılcım var ama henüz tam güç yok. Tesla'yı biraz daha araştırırsan enerjin katlanır!"
+    },
+    "zero": {
+      "min": 0,
+      "emoji": "🔋😄",
+      "title": "Pil Tamamen Bitti!",
+      "message": "Enerji yok şu an! Ama endişelenme, Tesla da ilk seferinde başarılı olmamıştı. Yeniden şarj ol ve tekrar dene!"
+    }
+  }
+}

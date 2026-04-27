@@ -1,0 +1,101 @@
+{
+  "category": "hogwarts",
+  "title": "Hogwarts Gizemi",
+  "subtitle": "Sihir, büyü ve efsanevi bir okulun sırları... Platform 9¾'ten geçmeye hazır mısın?",
+  "emoji": "🧙",
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #1a0a00 0%, #2d1000 50%, #3d1500 100%)",
+    "surface": "rgba(255, 255, 255, 0.07)",
+    "surfaceHover": "rgba(255, 255, 255, 0.13)",
+    "accent": "#c9a227",
+    "accentDark": "#a07d10",
+    "text": "#f5e6d3",
+    "textMuted": "rgba(245, 230, 211, 0.65)",
+    "optionHover": "rgba(201, 162, 39, 0.12)",
+    "optionCorrect": "rgba(76, 175, 80, 0.35)",
+    "optionWrong": "rgba(244, 67, 54, 0.35)"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Hogwarts büyücülük okulu hangi ülkede yer alır?",
+      "options": {
+        "a": "İngiltere",
+        "b": "İrlanda",
+        "c": "İskoçya",
+        "d": "Galler"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 2,
+      "question": "'Wingardium Leviosa' büyüsü ne işe yarar?",
+      "options": {
+        "a": "Nesneleri görünmez kılar",
+        "b": "Nesneleri havaya kaldırır",
+        "c": "Kapıları açar",
+        "d": "Ateş yakar"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 3,
+      "question": "Harry Potter'ın en yakın iki arkadaşı kimlerdir?",
+      "options": {
+        "a": "Draco ve Luna",
+        "b": "Neville ve Ginny",
+        "c": "Fred ve George",
+        "d": "Ron ve Hermione"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 4,
+      "question": "Quidditch maçında yakalanınca oyunu sona erdiren top hangisidir?",
+      "options": {
+        "a": "Bludger",
+        "b": "Quaffle",
+        "c": "Altın Snitch",
+        "d": "Ölüm Yadigârı"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 5,
+      "question": "Voldemort'un gerçek adı nedir?",
+      "options": {
+        "a": "Salazar Slytherin",
+        "b": "Gellert Grindelwald",
+        "c": "Bartemius Crouch",
+        "d": "Tom Marvolo Riddle"
+      },
+      "correct": "d"
+    }
+  ],
+  "results": {
+    "perfect": {
+      "min": 5,
+      "emoji": "🧙✨",
+      "title": "Tam Puan! Gerçek Büyücü!",
+      "message": "Hermione bile bu kadar iyi bilemezdi! Hogwarts'ın kapıları sana sonuna kadar açık. Hangi eve aittiksin acaba?"
+    },
+    "great": {
+      "min": 3,
+      "emoji": "⚡🎩",
+      "title": "Oldukça Büyücü!",
+      "message": "Büyü kitapların var ama bazı sayfalar henüz okunmamış. Genel olarak harika gidiyorsun, öğrenci!"
+    },
+    "ok": {
+      "min": 1,
+      "emoji": "🦉📚",
+      "title": "Acemi Büyücü!",
+      "message": "Hogwarts'a yeni kayıt yaptırmış biri gibisin. Merakın için 10 puan Gryffindor! Devam et."
+    },
+    "zero": {
+      "min": 0,
+      "emoji": "🚂😄",
+      "title": "Treni Kaçırdın!",
+      "message": "Hogwarts Ekspresi seni bekledi ama sen platformu bulamadın. 9¾'e bir dahaki sefere daha dikkatli bak!"
+    }
+  }
+}

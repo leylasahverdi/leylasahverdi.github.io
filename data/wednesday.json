@@ -1,0 +1,101 @@
+{
+  "category": "wednesday",
+  "title": "Wednesday",
+  "subtitle": "Karanlığın en şık sakini seni bekliyor. Nevermore'a layık mısın?",
+  "emoji": "🖤",
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #050505 0%, #0f0f0f 50%, #1a1a1a 100%)",
+    "surface": "rgba(255, 255, 255, 0.06)",
+    "surfaceHover": "rgba(255, 255, 255, 0.11)",
+    "accent": "#c7b7e4",
+    "accentDark": "#9575cd",
+    "text": "#f0eeee",
+    "textMuted": "rgba(240, 238, 238, 0.55)",
+    "optionHover": "rgba(199, 183, 228, 0.10)",
+    "optionCorrect": "rgba(76, 175, 80, 0.35)",
+    "optionWrong": "rgba(244, 67, 54, 0.35)"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Wednesday Addams'ın babasının adı nedir?",
+      "options": {
+        "a": "Lurch",
+        "b": "Uncle Fester",
+        "c": "Gomez Addams",
+        "d": "Thing"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 2,
+      "question": "Wednesday, Netflix dizisinde hangi okula gider?",
+      "options": {
+        "a": "Hogwarts",
+        "b": "Nevermore Academy",
+        "c": "Blackwood Academy",
+        "d": "Shadow Academy"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 3,
+      "question": "Wednesday'in Netflix dizisindeki oda arkadaşının adı nedir?",
+      "options": {
+        "a": "Bianca",
+        "b": "Ajax",
+        "c": "Xavier",
+        "d": "Enid"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 4,
+      "question": "Wednesday neredeyse her zaman ne renk giyinir?",
+      "options": {
+        "a": "Mor",
+        "b": "Kırmızı",
+        "c": "Gri",
+        "d": "Siyah"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 5,
+      "question": "Wednesday'in yanında sürekli olan 'Thing' nedir?",
+      "options": {
+        "a": "Küçük bir hayalet",
+        "b": "Büyülü bir kukla",
+        "c": "Canlanmış bir el",
+        "d": "Küçük bir robot"
+      },
+      "correct": "c"
+    }
+  ],
+  "results": {
+    "perfect": {
+      "min": 5,
+      "emoji": "🖤🕸️",
+      "title": "Gerçek Wednesday!",
+      "message": "Karanlık, zeki ve hiçbir şeyi kaçırmıyorsun. Wednesday'in ikizi olabilirsin — ve bu bir iltifat."
+    },
+    "great": {
+      "min": 3,
+      "emoji": "⚰️✨",
+      "title": "Karanlığa Yakın!",
+      "message": "Nevermore'un koridorları sana tanıdık geliyor. Birkaç eksik var ama genel olarak tam bir Addams ruhu taşıyorsun."
+    },
+    "ok": {
+      "min": 1,
+      "emoji": "🕯️🌑",
+      "title": "Küçük Bir Hayalet!",
+      "message": "Karanlığa adım atmaya çalışıyorsun. Wednesday seni biraz eğitirse çok daha iyi olursun — o da pek öğretmek istemez ama..."
+    },
+    "zero": {
+      "min": 0,
+      "emoji": "☀️😅",
+      "title": "Güneş Işığı Fazla!",
+      "message": "Wednesday sana doğrudan bakamazdı bile! Ama seninle komşu olmak güzel olurdu — en azından dışarısı aydınlık kalırdı."
+    }
+  }
+}

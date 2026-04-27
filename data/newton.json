@@ -1,0 +1,101 @@
+{
+  "category": "newton",
+  "title": "Newton'ın Dünyası",
+  "subtitle": "Elmanın düştüğü andan evreni değiştiren yasalara... Bakalım Newton kadar meraklı mısın?",
+  "emoji": "🍎",
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #0d1b3e 0%, #0a2855 50%, #1a3a6e 100%)",
+    "surface": "rgba(255, 255, 255, 0.07)",
+    "surfaceHover": "rgba(255, 255, 255, 0.13)",
+    "accent": "#f0c040",
+    "accentDark": "#c9a400",
+    "text": "#e8f4fd",
+    "textMuted": "rgba(232, 244, 253, 0.65)",
+    "optionHover": "rgba(240, 192, 64, 0.12)",
+    "optionCorrect": "rgba(76, 175, 80, 0.35)",
+    "optionWrong": "rgba(244, 67, 54, 0.35)"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Efsaneye göre Newton'ı yerçekimi üzerine düşünmeye iten olay neydi?",
+      "options": {
+        "a": "Üzerine bir elma düştü",
+        "b": "Gökyüzündeki yıldızları saatlerce izledi",
+        "c": "Bir arkadaşı ona anlattı",
+        "d": "Rüyasında gördü"
+      },
+      "correct": "a"
+    },
+    {
+      "id": 2,
+      "question": "Newton, hareket yasalarını ve evrensel çekim yasasını hangi eserinde açıkladı?",
+      "options": {
+        "a": "Opticks",
+        "b": "The Grand Design",
+        "c": "Principia Mathematica",
+        "d": "Alchemy Notes"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 3,
+      "question": "Newton prizma deneyleriyle ne keşfetti?",
+      "options": {
+        "a": "Ateşin gizli rengini",
+        "b": "Beyaz ışığın tüm gökkuşağı renklerini içerdiğini",
+        "c": "Karanlıkta görme yeteneğini",
+        "d": "Gözlüğü nasıl yapacağını"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 4,
+      "question": "Newton hangi ülkede doğdu?",
+      "options": {
+        "a": "Fransa",
+        "b": "Almanya",
+        "c": "İtalya",
+        "d": "İngiltere"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 5,
+      "question": "Newton kaç yaşında hayatını kaybetti?",
+      "options": {
+        "a": "65",
+        "b": "72",
+        "c": "84",
+        "d": "91"
+      },
+      "correct": "c"
+    }
+  ],
+  "results": {
+    "perfect": {
+      "min": 5,
+      "emoji": "🧠✨",
+      "title": "Tam Puan! Dehasın!",
+      "message": "Newton kendinden bahsederken seni kastediyor olmalıydı! Fizik yasalarını sanki hep biliyormuşsun gibi yanıtladın. Bravo!"
+    },
+    "great": {
+      "min": 3,
+      "emoji": "⭐🎯",
+      "title": "Süper Gidiyorsun!",
+      "message": "Yerçekimi seni aşağı çekemez! Ufak birkaç detay seni geçse de merakın ve zekân tam yerinde."
+    },
+    "ok": {
+      "min": 1,
+      "emoji": "🌱💡",
+      "title": "İyi Deneme!",
+      "message": "Elma düştü ama henüz kafana değmedi! Biraz daha Newton okursan bir dahaki sefere çok daha güçlü dönersin."
+    },
+    "zero": {
+      "min": 0,
+      "emoji": "🍎😄",
+      "title": "Hiç Değil Ama Şirin!",
+      "message": "Newton'ın elması gibi düştün ama yerçekimini henüz bulmadın. Yeniden dene, bu sefer mutlaka olur!"
+    }
+  }
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leyla Sahverdi | Hediye Kutusu Quizleri</title>
+  <meta name="description" content="Valotine.com hediye kutularına özel interaktif quizler. Tema dünyanı keşfet!" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --rose: #c2185b;
+      --rose-light: #e91e8c;
+      --rose-dark: #880e4f;
+      --cream: #fff8f0;
+      --text: #2d1520;
+      --text-muted: #7a4a5e;
+      --card-bg: #ffffff;
+      --radius: 20px;
+      --radius-sm: 12px;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(160deg, #fce4ec 0%, #f3e5f5 40%, #e8eaf6 100%);
+      min-height: 100vh;
+      color: var(--text);
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding: 48px 24px 24px;
+    }
+
+    .site-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(194, 24, 91, 0.08);
+      border: 1px solid rgba(194, 24, 91, 0.18);
+      color: var(--rose);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 0 24px 56px;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .hero-emoji {
+      font-size: 80px;
+      display: block;
+      margin-bottom: 20px;
+      animation: floatBob 3s ease-in-out infinite;
+    }
+
+    .hero-title {
+      font-size: clamp(28px, 6vw, 42px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      color: var(--rose-dark);
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, var(--rose), var(--rose-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 480px;
+      margin: 0 auto 28px;
+    }
+
+    .hero-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      border: 1px solid rgba(194, 24, 91, 0.15);
+      color: var(--text-muted);
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 99px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    /* ── Category Grid ── */
+    .section-title {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 24px 72px;
+    }
+
+    .category-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-emoji {
+      font-size: 44px;
+      margin-bottom: 14px;
+      line-height: 1;
+    }
+
+    .card-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, var(--rose), var(--rose-light));
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+
+    .card-btn:hover {
+      opacity: 0.88;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    footer a {
+      color: var(--rose);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ── Animations ── */
+    @keyframes floatBob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 480px) {
+      .grid { grid-template-columns: 1fr; padding: 0 16px 56px; }
+      .hero { padding: 0 16px 40px; }
+      .hero-emoji { font-size: 64px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-badge">🎁 valotine.com × leyla sahverdi</div>
+  </header>
+
+  <section class="hero">
+    <span class="hero-emoji">🎁</span>
+    <h1 class="hero-title">Hediyenin İçinde <span>Sürpriz Var!</span></h1>
+    <p class="hero-sub">
+      Valotine.com'dan aldığın hediye kutusunun içindeki QR kodu okuttun — harika! Şimdi kutunun temasına özel eğlenceli bir quiz seni bekliyor. Hazır mısın?
+    </p>
+    <span class="hero-hint">👇 Kutunun temasını seç ve başla</span>
+  </section>
+
+  <p class="section-title">Temalar</p>
+
+  <div class="grid">
+
+    <a class="category-card" href="/newton/">
+      <span class="card-emoji">🍎</span>
+      <span class="card-name">Newton'ın Dünyası</span>
+      <p class="card-desc">Elma düştü, evren değişti. Fizik yasaları ve dahi bir bilim insanının hayatını ne kadar biliyorsun?</p>
+      <span class="card-btn">Quiz'e Başla →</span>
+    </a>
+
+    <a class="category-card" href="/tesla/">
+      <span class="card-emoji">⚡</span>
+      <span class="card-name">Tesla'nın Evreni</span>
+      <p class="card-desc">Alternatif akımdan kablosuz enerjiye... Elektriğin büyülü dünyasının gizemlerini çözmeye var mısın?</p>
+      <span class="card-btn">Quiz'e Başla →</span>
+    </a>
+
+    <a class="category-card" href="/hogwarts/">
+      <span class="card-emoji">🧙</span>
+      <span class="card-name">Hogwarts Gizemi</span>
+      <p class="card-desc">Platform 9¾'ten geç, büyülü dünyaya adım at. Sihir okulunun sırlarını ne kadar iyi biliyorsun?</p>
+      <span class="card-btn">Quiz'e Başla →</span>
+    </a>
+
+    <a class="category-card" href="/frida/">
+      <span class="card-emoji">🌺</span>
+      <span class="card-name">Frida'nın Günlüğü</span>
+      <p class="card-desc">Renk, tutku ve başkaldırının sanatçısı Frida Kahlo hakkında ne kadar şey biliyorsun?</p>
+      <span class="card-btn">Quiz'e Başla →</span>
+    </a>
+
+    <a class="category-card" href="/kucuk-kadinlar/">
+      <span class="card-emoji">📚</span>
+      <span class="card-name">Küçük Kadınlar</span>
+      <p class="card-desc">Dört kız kardeşin sevgi, cesaret ve hayal dolu dünyasına hoş geldin. March ailesiyle ne kadar iç içesin?</p>
+      <span class="card-btn">Quiz'e Başla →</span>
+    </a>
+
+    <a class="category-card" href="/wednesday/">
+      <span class="card-emoji">🖤</span>
+      <span class="card-name">Wednesday</span>
+      <p class="card-desc">Karanlığın en şık sakininin dünyasına adım at. Nevermore'a layık olduğunu kanıtlayabilir misin?</p>
+      <span class="card-btn">Quiz'e Başla →</span>
+    </a>
+
+  </div>
+
+  <footer>
+    Sevgiyle hazırlandı &mdash; <a href="https://valotine.com" target="_blank" rel="noopener">valotine.com</a>
+  </footer>
+
+</body>
+</html>
