@@ -138,7 +138,8 @@ class QuizApp {
     this.app.innerHTML = `
       <div class="card result-card fade-in">
         <div class="confetti" id="confetti" aria-hidden="true"></div>
-        <span class="result-emoji">${r.emoji}</span>
+        <img class="result-img" src="${this.data.image}" alt="${this.data.title}" />
+        <div class="result-tier">${r.emoji}</div>
         <h2 class="result-title">${r.title}</h2>
         <div class="result-score">${this.score} <span>/ ${total}</span></div>
         <p class="result-msg">${r.message}</p>

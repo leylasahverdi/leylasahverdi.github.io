@@ -306,12 +306,23 @@ body {
   overflow: hidden;
 }
 
-.result-emoji {
-  font-size: 80px;
+.result-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  object-position: bottom;
+  border-radius: 20px;
+  background: #f0e6d2;
+  padding: 6px 10px 0;
+  margin: 0 auto 10px;
   display: block;
-  margin-bottom: 14px;
-  line-height: 1;
   animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.result-tier {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1;
 }
 
 .result-title {
