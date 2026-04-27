@@ -123,7 +123,7 @@
     .category-card {
       background: var(--card-bg);
       border-radius: var(--radius);
-      padding: 28px 24px;
+      padding: 0;
       text-decoration: none;
       color: inherit;
       border: 1px solid rgba(0, 0, 0, 0.06);
@@ -131,32 +131,56 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      overflow: hidden;
     }
 
     .category-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+      transform: translateY(-6px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.13);
     }
 
-    .card-emoji {
-      font-size: 44px;
-      margin-bottom: 14px;
-      line-height: 1;
+    .card-img-wrap {
+      width: 100%;
+      height: 210px;
+      background: #f0e6d2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card-img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      padding: 12px 20px 0;
+      transition: transform 0.28s ease;
+    }
+
+    .category-card:hover .card-img {
+      transform: scale(1.06) translateY(-4px);
+    }
+
+    .card-body {
+      padding: 18px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
     }
 
     .card-name {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
 
     .card-desc {
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--text-muted);
       line-height: 1.6;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       flex: 1;
     }
 
@@ -166,9 +190,9 @@
       gap: 6px;
       background: linear-gradient(135deg, var(--rose), var(--rose-light));
       color: white;
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 600;
-      padding: 10px 20px;
+      padding: 9px 18px;
       border-radius: var(--radius-sm);
       text-decoration: none;
       transition: opacity 0.15s;
@@ -226,45 +250,69 @@
   <div class="grid">
 
     <a class="category-card" href="/newton/">
-      <span class="card-emoji">🍎</span>
-      <span class="card-name">Newton'ın Dünyası</span>
-      <p class="card-desc">Elma düştü, evren değişti. Fizik yasaları ve dahi bir bilim insanının hayatını ne kadar biliyorsun?</p>
-      <span class="card-btn">Quiz'e Başla →</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="assets/amigrumi/isaac_newton.png" alt="Newton amigurumi" />
+      </div>
+      <div class="card-body">
+        <span class="card-name">Newton'ın Dünyası</span>
+        <p class="card-desc">Elma düştü, evren değişti. Fizik yasaları ve dahi bir bilim insanının hayatını ne kadar biliyorsun?</p>
+        <span class="card-btn">Quiz'e Başla →</span>
+      </div>
     </a>
 
     <a class="category-card" href="/tesla/">
-      <span class="card-emoji">⚡</span>
-      <span class="card-name">Tesla'nın Evreni</span>
-      <p class="card-desc">Alternatif akımdan kablosuz enerjiye... Elektriğin büyülü dünyasının gizemlerini çözmeye var mısın?</p>
-      <span class="card-btn">Quiz'e Başla →</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="assets/amigrumi/tesla.png" alt="Tesla amigurumi" />
+      </div>
+      <div class="card-body">
+        <span class="card-name">Tesla'nın Evreni</span>
+        <p class="card-desc">Alternatif akımdan kablosuz enerjiye... Elektriğin büyülü dünyasının gizemlerini çözmeye var mısın?</p>
+        <span class="card-btn">Quiz'e Başla →</span>
+      </div>
     </a>
 
     <a class="category-card" href="/harry-potter/">
-      <span class="card-emoji">🧙</span>
-      <span class="card-name">Harry Potter</span>
-      <p class="card-desc">Platform 9¾'ten geç, büyülü dünyaya adım at. Sihir okulunun sırlarını ne kadar iyi biliyorsun?</p>
-      <span class="card-btn">Quiz'e Başla →</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="assets/amigrumi/harry.png" alt="Harry Potter amigurumi" />
+      </div>
+      <div class="card-body">
+        <span class="card-name">Harry Potter</span>
+        <p class="card-desc">Platform 9¾'ten geç, büyülü dünyaya adım at. Sihir okulunun sırlarını ne kadar iyi biliyorsun?</p>
+        <span class="card-btn">Quiz'e Başla →</span>
+      </div>
     </a>
 
     <a class="category-card" href="/frida/">
-      <span class="card-emoji">🌺</span>
-      <span class="card-name">Frida'nın Günlüğü</span>
-      <p class="card-desc">Renk, tutku ve başkaldırının sanatçısı Frida Kahlo hakkında ne kadar şey biliyorsun?</p>
-      <span class="card-btn">Quiz'e Başla →</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="assets/amigrumi/frida.png" alt="Frida amigurumi" />
+      </div>
+      <div class="card-body">
+        <span class="card-name">Frida'nın Günlüğü</span>
+        <p class="card-desc">Renk, tutku ve başkaldırının sanatçısı Frida Kahlo hakkında ne kadar şey biliyorsun?</p>
+        <span class="card-btn">Quiz'e Başla →</span>
+      </div>
     </a>
 
     <a class="category-card" href="/inci-kupeli-kiz/">
-      <span class="card-emoji">📚</span>
-      <span class="card-name">İnci Küpeli Kız</span>
-      <p class="card-desc">Dört kız kardeşin sevgi, cesaret ve hayal dolu dünyasına hoş geldin. March ailesiyle ne kadar iç içesin?</p>
-      <span class="card-btn">Quiz'e Başla →</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="assets/amigrumi/inci_kupeli_kiz.png" alt="İnci Küpeli Kız amigurumi" />
+      </div>
+      <div class="card-body">
+        <span class="card-name">İnci Küpeli Kız</span>
+        <p class="card-desc">Gizemli bir tablonun ardındaki kız... Vermeer'in başyapıtı ve 17. yüzyıl Hollanda'sı hakkında ne biliyorsun?</p>
+        <span class="card-btn">Quiz'e Başla →</span>
+      </div>
     </a>
 
     <a class="category-card" href="/wednesday/">
-      <span class="card-emoji">🖤</span>
-      <span class="card-name">Wednesday</span>
-      <p class="card-desc">Karanlığın en şık sakininin dünyasına adım at. Nevermore'a layık olduğunu kanıtlayabilir misin?</p>
-      <span class="card-btn">Quiz'e Başla →</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="assets/amigrumi/wednesday.png" alt="Wednesday amigurumi" />
+      </div>
+      <div class="card-body">
+        <span class="card-name">Wednesday</span>
+        <p class="card-desc">Karanlığın en şık sakininin dünyasına adım at. Nevermore'a layık olduğunu kanıtlayabilir misin?</p>
+        <span class="card-btn">Quiz'e Başla →</span>
+      </div>
     </a>
 
   </div>

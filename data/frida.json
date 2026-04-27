@@ -3,6 +3,7 @@
   "title": "Frida'nın Günlüğü",
   "subtitle": "Renk, tutku ve başkaldırının sanatçısı... Frida Kahlo'yu ne kadar tanıyorsun?",
   "emoji": "🌺",
+  "image": "../assets/amigrumi/frida.png",
   "theme": {
     "bgGradient": "linear-gradient(135deg, #2d0a00 0%, #4a1200 50%, #6b2000 100%)",
     "surface": "rgba(255, 255, 255, 0.07)",

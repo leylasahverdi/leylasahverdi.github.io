@@ -3,6 +3,7 @@
   "title": "Wednesday",
   "subtitle": "Karanlığın en şık sakini seni bekliyor. Nevermore'a layık mısın?",
   "emoji": "🖤",
+  "image": "../assets/amigrumi/wednesday.png",
   "theme": {
     "bgGradient": "linear-gradient(135deg, #050505 0%, #0f0f0f 50%, #1a1a1a 100%)",
     "surface": "rgba(255, 255, 255, 0.06)",

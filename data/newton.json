@@ -3,6 +3,7 @@
   "title": "Newton'ın Dünyası",
   "subtitle": "Elmanın düştüğü andan evreni değiştiren yasalara... Bakalım Newton kadar meraklı mısın?",
   "emoji": "🍎",
+  "image": "../assets/amigrumi/isaac_newton.png",
   "theme": {
     "bgGradient": "linear-gradient(135deg, #0d1b3e 0%, #0a2855 50%, #1a3a6e 100%)",
     "surface": "rgba(255, 255, 255, 0.07)",

@@ -13,7 +13,7 @@ class QuizApp {
   async init() {
     this.app.innerHTML = '<div class="loading">Yükleniyor ✨</div>';
     try {
-      const res = await fetch(`/data/${this.category}.json`);
+      const res = await fetch(`../data/${this.category}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       this.data = await res.json();
       this.applyTheme();
@@ -42,7 +42,7 @@ class QuizApp {
   showIntro() {
     this.app.innerHTML = `
       <div class="card fade-in">
-        <span class="intro-emoji">${this.data.emoji}</span>
+        <img class="intro-img" src="${this.data.image}" alt="${this.data.title}" />
         <h1 class="intro-title">${this.data.title}</h1>
         <p class="intro-sub">${this.data.subtitle}</p>
         <span class="intro-count">📝 ${this.data.questions.length} soru</span>

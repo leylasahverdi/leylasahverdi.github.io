@@ -3,6 +3,7 @@
   "title": "Hogwarts Gizemi",
   "subtitle": "Sihir, büyü ve efsanevi bir okulun sırları... Platform 9¾'ten geçmeye hazır mısın?",
   "emoji": "🧙",
+  "image": "../assets/amigrumi/harry.png",
   "theme": {
     "bgGradient": "linear-gradient(135deg, #1a0a00 0%, #2d1000 50%, #3d1500 100%)",
     "surface": "rgba(255, 255, 255, 0.07)",

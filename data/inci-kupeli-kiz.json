@@ -3,6 +3,7 @@
   "title": "Küçük Kadınlar",
   "subtitle": "Dört kız kardeşin sevgi, cesaret ve hayal dolu dünyasına hoş geldin!",
   "emoji": "📚",
+  "image": "../assets/amigrumi/inci_kupeli_kiz.png",
   "theme": {
     "bgGradient": "linear-gradient(135deg, #2d1220 0%, #4a1e35 50%, #6b2d4e 100%)",
     "surface": "rgba(255, 255, 255, 0.07)",

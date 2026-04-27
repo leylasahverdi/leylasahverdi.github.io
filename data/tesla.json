@@ -3,6 +3,7 @@
   "title": "Tesla'nın Evreni",
   "subtitle": "Alternatif akımdan kablosuz enerjiye... Elektriğin büyülü dünyasına hoş geldin!",
   "emoji": "⚡",
+  "image": "../assets/amigrumi/tesla.png",
   "theme": {
     "bgGradient": "linear-gradient(135deg, #0d0020 0%, #1a0040 50%, #2a0060 100%)",
     "surface": "rgba(255, 255, 255, 0.07)",
