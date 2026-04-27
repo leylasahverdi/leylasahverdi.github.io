@@ -1,0 +1,101 @@
+{
+  "category": "inci-kupeli-kiz",
+  "title": "Küçük Kadınlar",
+  "subtitle": "Dört kız kardeşin sevgi, cesaret ve hayal dolu dünyasına hoş geldin!",
+  "emoji": "📚",
+  "theme": {
+    "bgGradient": "linear-gradient(135deg, #2d1220 0%, #4a1e35 50%, #6b2d4e 100%)",
+    "surface": "rgba(255, 255, 255, 0.07)",
+    "surfaceHover": "rgba(255, 255, 255, 0.13)",
+    "accent": "#f48fb1",
+    "accentDark": "#c2185b",
+    "text": "#fff0f5",
+    "textMuted": "rgba(255, 240, 245, 0.65)",
+    "optionHover": "rgba(244, 143, 177, 0.12)",
+    "optionCorrect": "rgba(76, 175, 80, 0.35)",
+    "optionWrong": "rgba(244, 67, 54, 0.35)"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "'Küçük Kadınlar' romanının yazarı kimdir?",
+      "options": {
+        "a": "Jane Austen",
+        "b": "Charlotte Brontë",
+        "c": "Louisa May Alcott",
+        "d": "Virginia Woolf"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 2,
+      "question": "Dört kız kardeşten hangisi büyüyünce yazar olmayı hayal eder?",
+      "options": {
+        "a": "Meg",
+        "b": "Jo",
+        "c": "Beth",
+        "d": "Amy"
+      },
+      "correct": "b"
+    },
+    {
+      "id": 3,
+      "question": "Kız kardeşlerin soyadı nedir?",
+      "options": {
+        "a": "Bennett",
+        "b": "Dashwood",
+        "c": "March",
+        "d": "Fairfax"
+      },
+      "correct": "c"
+    },
+    {
+      "id": 4,
+      "question": "Beth hangi müzik aletini çalar?",
+      "options": {
+        "a": "Keman",
+        "b": "Gitar",
+        "c": "Flüt",
+        "d": "Piyano"
+      },
+      "correct": "d"
+    },
+    {
+      "id": 5,
+      "question": "Roman hangi tarihi dönemde geçmektedir?",
+      "options": {
+        "a": "Fransız Devrimi",
+        "b": "Amerikan İç Savaşı",
+        "c": "Birinci Dünya Savaşı",
+        "d": "İkinci Dünya Savaşı"
+      },
+      "correct": "b"
+    }
+  ],
+  "results": {
+    "perfect": {
+      "min": 5,
+      "emoji": "📚💐",
+      "title": "Jo March Ruhundasın!",
+      "message": "Kitapları, karakterleri ve duyguları derinlemesine hissediyorsun. March kızları seni kucak açarak karşılardı. Bravo!"
+    },
+    "great": {
+      "min": 3,
+      "emoji": "🌷✨",
+      "title": "Küçük Ama Güçlü!",
+      "message": "March kızları seni kapıya kadar karşılardı! Neredeyse mükemmelsin, birkaç detay seni geçmiş ama bu önemli değil."
+    },
+    "ok": {
+      "min": 1,
+      "emoji": "📖🌸",
+      "title": "Okuma Listene Ekle!",
+      "message": "Kitap henüz okunmamış gibi görünüyor. Ama merak her şeyi öğretir — okuma listeni hazırlama vakti!"
+    },
+    "zero": {
+      "min": 0,
+      "emoji": "🎀😄",
+      "title": "Yine de Hoş Geldin!",
+      "message": "Quizi bilmesen de March ailesi sıcak kalpli herkesi evlerine kabul ederdi. İyi niyet her şeyden önce gelir!"
+    }
+  }
+}
